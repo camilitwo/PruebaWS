@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Services;
 using datos;
+using mis_clases;
 
 namespace PruebaWS
 {
@@ -30,6 +31,29 @@ namespace PruebaWS
             return DatosDAO.listarAutos();
         }
 
+
+        [WebMethod]
+        public List<AutoDTO> listarAutosObjeto()
+        {
+            DataTable dt =  DatosDAO.listarAutos();
+
+            List<AutoDTO> listaAutos = new List<AutoDTO>();
+            AutoDTO auto = null;
+            foreach (DataRow row in dt.Rows)
+            {
+                auto = new AutoDTO();
+                {
+                    auto.Marca = row["MARCA"].ToString();
+                    auto.IdPropietario = row["ID_PROPIETARIO"].ToString();
+                    auto.Patente = row["PATENTE"].ToString();
+                    // Map other properties accordingly
+                };
+
+                listaAutos.Add(auto);
+            }
+
+            return listaAutos;
+        }
 
     }
 }
