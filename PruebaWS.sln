@@ -5,6 +5,11 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaWS", "PruebaWS\PruebaWS.csproj", "{6BDAC4E6-F23A-407D-B32F-F2AFD7F4D045}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumoPrueba", "ConsumoPrueba\ConsumoPrueba.csproj", "{5EF420DF-90A9-4763-A30F-C33C06AAFB24}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6BDAC4E6-F23A-407D-B32F-F2AFD7F4D045} = {6BDAC4E6-F23A-407D-B32F-F2AFD7F4D045}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{6BDAC4E6-F23A-407D-B32F-F2AFD7F4D045}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BDAC4E6-F23A-407D-B32F-F2AFD7F4D045}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BDAC4E6-F23A-407D-B32F-F2AFD7F4D045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EF420DF-90A9-4763-A30F-C33C06AAFB24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EF420DF-90A9-4763-A30F-C33C06AAFB24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EF420DF-90A9-4763-A30F-C33C06AAFB24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EF420DF-90A9-4763-A30F-C33C06AAFB24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
